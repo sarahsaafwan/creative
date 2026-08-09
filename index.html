@@ -525,60 +525,6 @@
       .work-path footer{grid-template-columns:1fr;gap:4px;margin-top:14px}
       .work-path footer span{font-size:.84rem}
     }
-    /* Visual creativity gallery */
-    .visual-section{background:var(--pale);position:relative}
-    .visual-section:before{content:"";position:absolute;inset:0;opacity:.22;pointer-events:none;background:radial-gradient(var(--pink) 1px,transparent 1.5px);background-size:18px 18px}
-    .visual-section>*{position:relative;z-index:2}
-    .visual-gallery{width:min(1180px,100%);margin:auto;display:grid;grid-template-columns:1.08fr .92fr;gap:clamp(25px,4vw,54px);align-items:center}
-    .visual-feature{padding:16px 16px 22px;background:var(--cream);border:1px solid var(--brown);box-shadow:12px 13px 0 var(--pink);transform:rotate(-1deg)}
-    .visual-media-button{display:block;width:100%;padding:0;border:0;background:none;color:inherit;cursor:zoom-in;text-align:inherit}
-    .visual-feature-frame{position:relative;overflow:hidden;border:1px solid var(--brown);background:var(--brown);aspect-ratio:16/9}
-    .visual-feature-frame img,.visual-slide-media img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .55s cubic-bezier(.16,1,.3,1),filter .4s}
-    .visual-media-button:hover img,.visual-media-button:focus-visible img{transform:scale(1.025);filter:saturate(1.04)}
-    .visual-media-button:focus-visible{outline:3px solid var(--green);outline-offset:5px}
-    .visual-open-hint{position:absolute;right:12px;bottom:12px;padding:7px 10px;background:rgba(252,239,242,.92);border:1px solid var(--brown);font-size:.42rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;pointer-events:none}
-    .visual-card-copy{padding:20px 8px 3px}
-    .visual-eyebrow{display:block;font-size:.46rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--green)}
-    .visual-card-copy h3{margin:9px 0 8px;font-family:var(--display);font-size:clamp(1.4rem,2.4vw,2.15rem);line-height:1}
-    .visual-card-copy p{margin:0;font-size:.68rem;line-height:1.65}
-    .visual-carousel-wrap{position:relative}
-    .visual-carousel{padding:17px;background:var(--brown);border:1px solid var(--brown);box-shadow:12px 13px 0 var(--green);transform:rotate(1deg)}
-    .visual-carousel-label{position:absolute;z-index:5;left:-22px;top:-21px;padding:9px 15px;background:var(--pink);border:1px solid var(--brown);font-family:var(--script);font-size:1.55rem;transform:rotate(-5deg)}
-    .visual-viewport{overflow:hidden;background:var(--cream);touch-action:pan-y}
-    .visual-track{display:flex;transition:transform .55s cubic-bezier(.16,1,.3,1)}
-    .visual-slide{min-width:100%}
-    .visual-slide-media{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--cream)}
-    .visual-slide-media img{object-fit:contain}
-    .visual-carousel-copy{min-height:145px;padding:18px 15px 16px;background:var(--cream);border-top:1px solid var(--brown)}
-    .visual-carousel-copy h3{margin:8px 0 7px;font-family:var(--display);font-size:1.25rem;line-height:1}
-    .visual-carousel-copy p{margin:0;font-size:.62rem;line-height:1.6}
-    .visual-series{width:min(760px,100%);margin:78px auto 0;position:relative}
-    .visual-series-head{margin:0 0 32px;text-align:center}
-    .visual-series-head span{display:inline-block;padding:7px 13px;background:var(--green);color:var(--cream);font-size:.46rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;transform:rotate(-1deg)}
-    .visual-series-head h3{margin:14px 0 8px;font-family:var(--script);font-size:clamp(3.7rem,7vw,6.2rem);font-weight:400;line-height:.72}
-    .visual-series-head p{max-width:600px;margin:auto;font-size:.68rem;line-height:1.7}
-    .visual-series .visual-carousel{transform:rotate(-.6deg);box-shadow:12px 13px 0 var(--pink)}
-    .visual-series .visual-slide-media{aspect-ratio:4/5}
-    .visual-series .visual-carousel-copy{min-height:138px}
-    .visual-controls{margin-top:18px;display:grid;grid-template-columns:45px 1fr 45px;gap:12px;align-items:center}
-    .visual-arrow{width:45px;aspect-ratio:1;border:1px solid var(--cream);border-radius:50%;background:transparent;color:var(--cream);font-size:1.2rem;cursor:pointer;transition:.22s}
-    .visual-arrow:hover,.visual-arrow:focus-visible{background:var(--pink);color:var(--brown);border-color:var(--pink);transform:scale(1.07)}
-    .visual-dots{display:flex;justify-content:center;gap:8px}
-    .visual-dot{width:9px;height:9px;padding:0;border:1px solid var(--cream);border-radius:50%;background:transparent;cursor:pointer;transition:.22s}
-    .visual-dot[aria-current="true"]{width:27px;border-radius:20px;background:var(--pink);border-color:var(--pink)}
-    .visual-counter{text-align:center;margin-top:12px;color:var(--cream);font-size:.43rem;font-weight:700;letter-spacing:.15em}
-    .visual-note{width:min(900px,100%);margin:48px auto 0;padding:17px 22px;display:flex;justify-content:space-between;gap:18px;background:var(--green);color:var(--cream);border:1px solid var(--brown);box-shadow:8px 9px 0 var(--brown)}
-    .visual-note strong{font-family:var(--script);font-size:1.8rem;font-weight:400;color:var(--pink)}
-    .visual-note span{align-self:center;font-size:.42rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-align:right}
-    .visual-lightbox{width:min(94vw,1200px);max-height:94vh;padding:0;border:1px solid var(--cream);background:rgba(35,25,24,.96);box-shadow:0 25px 90px rgba(0,0,0,.55);overflow:hidden}
-    .visual-lightbox::backdrop{background:rgba(30,20,19,.88);backdrop-filter:blur(8px)}
-    .visual-lightbox img{display:block;width:100%;height:calc(94vh - 70px);object-fit:contain}
-    .visual-lightbox-bar{height:70px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:20px;color:var(--cream)}
-    .visual-lightbox-caption{font-size:.55rem;letter-spacing:.08em}
-    .visual-lightbox-close{width:42px;aspect-ratio:1;border:1px solid var(--cream);border-radius:50%;background:transparent;color:var(--cream);font-size:1.2rem;cursor:pointer}
-    @media(max-width:850px){.visual-gallery{grid-template-columns:1fr;gap:55px}.visual-feature,.visual-carousel{transform:none}.visual-feature{width:min(760px,100%);margin:auto}.visual-carousel-wrap{width:min(600px,100%);margin:auto}.visual-series{margin-top:70px}}
-    @media(max-width:600px){.visual-gallery{gap:46px}.visual-feature{padding:9px 9px 17px;box-shadow:7px 8px 0 var(--pink)}.visual-card-copy{padding:17px 8px 2px}.visual-carousel{padding:10px;box-shadow:7px 8px 0 var(--green)}.visual-carousel-label{left:5px;top:-26px}.visual-carousel-copy{min-height:175px;padding:17px 13px}.visual-carousel-copy p,.visual-card-copy p{font-size:.82rem!important}.visual-series{margin-top:62px}.visual-series-head{margin-bottom:28px}.visual-series-head p{font-size:.82rem}.visual-series .visual-carousel-copy{min-height:190px}.visual-note{margin-top:38px;flex-direction:column;padding:17px}.visual-note span{text-align:left}.visual-lightbox{width:96vw;max-height:92vh}.visual-lightbox img{height:calc(92vh - 64px)}.visual-lightbox-bar{height:64px;padding:0 14px}.visual-open-hint{font-size:.5rem}}
-    @media(prefers-reduced-motion:reduce){.visual-track,.visual-feature-frame img,.visual-slide-media img{transition:none}}
   </style>
 </head>
 <body>
@@ -590,13 +536,13 @@
         <nav class="nav" aria-label="Main navigation">
           <a href="#home">Home</a><a href="#about">About</a>
           <div class="nav-group"><button class="nav-trigger" type="button">Work</button><div class="dropdown"><a href="#work">Selected Work</a><a href="#brand-identity">Brand Identity</a><a href="#websites">Websites</a><a href="#statistics">Statistics</a></div></div>
-          <div class="nav-group"><button class="nav-trigger" type="button">Content</button><div class="dropdown"><a href="#content-creation">Content Creation</a><a href="#ugc">UGC Studio</a><a href="#visual-creativity">Visual Creativity</a><a href="#sae-lens">The Sae Lens</a><a href="#writing">Writing</a><a href="#audio">Podcast & Audio</a></div></div>
+          <div class="nav-group"><button class="nav-trigger" type="button">Content</button><div class="dropdown"><a href="#content-creation">Content Creation</a><a href="#ugc">UGC Studio</a><a href="#sae-lens">The Sae Lens</a><a href="#writing">Writing</a><a href="#audio">Podcast & Audio</a></div></div>
           <a href="#services">Services</a><a href="#contact">Contact</a>
         </nav>
         <a class="mini-cta" href="#contact">Let’s create ♡</a>
         <button class="star-menu" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">🌟</button>
       </header>
-      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="#home">Home</a><a href="#about">About</a><span class="mobile-sub">Work</span><a href="#work">Portfolio</a><a href="#statistics">Statistics</a><span class="mobile-sub">Content</span><a href="#content-creation">Content Creation</a><a href="#ugc">UGC Studio</a><a href="#visual-creativity">Visual Creativity</a><a href="#sae-lens">The Sae Lens</a><a href="#writing">Writing</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation"><a href="#home">Home</a><a href="#about">About</a><span class="mobile-sub">Work</span><a href="#work">Portfolio</a><a href="#statistics">Statistics</a><span class="mobile-sub">Content</span><a href="#content-creation">Content Creation</a><a href="#ugc">UGC Studio</a><a href="#sae-lens">The Sae Lens</a><a href="#writing">Writing</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
       <section class="hero" aria-labelledby="title">
         <div class="copy">
           <p class="label">marketer · writer · content creator</p>
@@ -763,137 +709,6 @@
       </div>
       <div class="ugc-real-note"><strong>Created from filming to final edit by me.</strong><span>vertical video · product storytelling · presentation · editing</span></div>
     </section>
-    <section class="full-section visual-section" id="visual-creativity" aria-labelledby="visual-title">
-      <header class="section-head"><h2 id="visual-title">Visual creativity</h2><p>From thumbnails to social carousels, I turn everyday ideas and personal stories into visuals that feel considered, engaging and recognisably mine.</p></header>
-      <div class="visual-gallery">
-        <article class="visual-feature">
-          <button class="visual-media-button" type="button" data-lightbox-src="2.jpg" data-lightbox-caption="YouTube vlog thumbnail — Weekend Reset">
-            <div class="visual-feature-frame"><img src="2.jpg" alt="YouTube thumbnail for Sae Vlogs episode one, Weekend Reset, featuring a lifestyle photo collage" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-          </button>
-          <div class="visual-card-copy"><span class="visual-eyebrow">YouTube thumbnail · Canva</span><h3>Weekend Reset</h3><p>A vlog thumbnail designed to turn small weekend moments into one clear, clickable story. The layered collage, handwritten arrows and bold title balance personality with instant readability.</p></div>
-        </article>
-        <div class="visual-carousel-wrap">
-          <span class="visual-carousel-label">swipe through ♡</span>
-          <div class="visual-carousel" aria-roledescription="carousel" aria-label="Get to know me social carousel">
-            <div class="visual-viewport">
-              <div class="visual-track">
-                <article class="visual-slide" aria-label="Slide 1 of 4">
-                  <button class="visual-media-button" type="button" data-lightbox-src="1.jpg" data-lightbox-caption="Get to Know Me — opening carousel slide">
-                    <div class="visual-slide-media"><img src="1.jpg" alt="Get to Know Me carousel cover introducing Sarah and her interests in travel, makeup and food" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Carousel 01 · Introduction</span><h3>Get to Know Me</h3><p>An opening slide that introduces my personality through layered snapshots, playful stickers and a warm scrapbook-inspired layout.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 2 of 4">
-                  <button class="visual-media-button" type="button" data-lightbox-src="2(1).jpg" data-lightbox-caption="Get to Know Me — Things I Love">
-                    <div class="visual-slide-media"><img src="2(1).jpg" alt="Things I Love carousel slide featuring books, drinks, a handbag and makeup" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Carousel 02 · Personal interests</span><h3>Things I Love</h3><p>A moodboard-led slide using personal photography to build a cohesive visual story around books, beauty, little treats and everyday details.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 3 of 4">
-                  <button class="visual-media-button" type="button" data-lightbox-src="3.jpg" data-lightbox-caption="Get to Know Me — The Foods That Make Me Happy">
-                    <div class="visual-slide-media"><img src="3.jpg" alt="Food-themed carousel slide featuring sushi, fried chicken, pasta and gelato" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Carousel 03 · Lifestyle</span><h3>The Foods That Make Me Happy</h3><p>A colourful food collage that keeps the series’ visual language consistent while giving this slide its own playful, appetite-led energy.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 4 of 4">
-                  <button class="visual-media-button" type="button" data-lightbox-src="4.jpg" data-lightbox-caption="Get to Know Me — Fitness Journey">
-                    <div class="visual-slide-media"><img src="4.jpg" alt="Fitness journey carousel slide featuring Sarah at the gym with a personal message" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Carousel 04 · Personal journey</span><h3>Sharing the Journey</h3><p>A simple, encouraging closing slide that shifts the carousel from interests to connection, inviting the audience into an ongoing personal journey.</p></div>
-                </article>
-              </div>
-            </div>
-            <div class="visual-controls">
-              <button class="visual-arrow visual-prev" type="button" aria-label="Previous slide">←</button>
-              <div class="visual-dots" role="group" aria-label="Choose a slide"></div>
-              <button class="visual-arrow visual-next" type="button" aria-label="Next slide">→</button>
-            </div>
-            <div class="visual-counter" aria-live="polite">01 / 04</div>
-          </div>
-        </div>
-      </div>
-      <div class="visual-series">
-        <header class="visual-series-head">
-          <span>Lifestyle carousel · Canva</span>
-          <h3>Little things that bring me joy</h3>
-          <p>A nine-slide lifestyle story built from my own photographs, scrapbook details and conversational text. The series turns ordinary favourites into a warm, personal visual narrative.</p>
-        </header>
-        <div class="visual-carousel-wrap">
-          <span class="visual-carousel-label">nine little joys ♡</span>
-          <div class="visual-carousel" aria-roledescription="carousel" aria-label="Little things that bring me joy carousel">
-            <div class="visual-viewport">
-              <div class="visual-track">
-                <article class="visual-slide" aria-label="Slide 1 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="65000020-0808-45FF-AECC-F15CEA7116EC.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — cover">
-                    <div class="visual-slide-media"><img src="65000020-0808-45FF-AECC-F15CEA7116EC.jpeg" alt="Scrapbook-style cover collage for Little Things That Bring Me Joy" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 01 · Cover</span><h3>Little Things That Bring Me Joy</h3><p>A scrapbook-style opener that previews the series through travel, coffee and everyday moments, tied together with playful notebook rings and stickers.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 2 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="FED918CD-55CF-4474-8D23-765579CF5867.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — Making Matcha">
-                    <div class="visual-slide-media"><img src="FED918CD-55CF-4474-8D23-765579CF5867.jpeg" alt="Making matcha lifestyle carousel slide with a bamboo whisk and inset coffee photo" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 02 · Ritual</span><h3>Making My Own Matcha</h3><p>A close-up ritual captured with a casual phone-camera frame, pairing the process with a small inset of another favourite drink.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 3 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="9B937043-D15E-470F-AE89-740EAC5931E3.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — Exploring New Places">
-                    <div class="visual-slide-media"><img src="9B937043-D15E-470F-AE89-740EAC5931E3.jpeg" alt="Lifestyle carousel slide about visiting different places with an inset VR gaming photo" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 03 · Experiences</span><h3>Exploring New Places</h3><p>A spacious location photograph becomes the backdrop for a smaller memory, using scale and contrast to make the slide feel layered but uncluttered.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 4 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="61A1E97D-5DC2-422C-813F-C4CD42899E58.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — Solo Travel">
-                    <div class="visual-slide-media"><img src="61A1E97D-5DC2-422C-813F-C4CD42899E58.jpeg" alt="Solo travel carousel slide showing an airplane wing above clouds" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 04 · Travel</span><h3>Solo Travelling</h3><p>An airy travel composition that lets the cloudscape lead, while the speech bubble and inset image keep the storytelling personal.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 5 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="CAC5CCA8-86F0-4639-AF16-1290F3262159.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — Going Out for Food">
-                    <div class="visual-slide-media"><img src="CAC5CCA8-86F0-4639-AF16-1290F3262159.jpeg" alt="Food carousel slide featuring pasta and grilled chicken with a sushi inset" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 05 · Food</span><h3>Going Out for Food</h3><p>A warm, appetite-led slide pairing a full-frame meal with a sushi detail to turn two favourite dining moments into one cohesive story.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 6 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="CC4A0EB1-2C05-49A3-BEB0-9B2616A7DB54.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — Ordering Coffee">
-                    <div class="visual-slide-media"><img src="CC4A0EB1-2C05-49A3-BEB0-9B2616A7DB54.jpeg" alt="Coffee carousel slide showing a canned latte with an iced pistachio latte inset" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 06 · Coffee</span><h3>Ordering Coffee</h3><p>A softly focused lifestyle shot that keeps the drink as the hero and uses the inset to add another small coffee-shop memory.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 7 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="72C97FAE-42D6-44C2-B170-4AA46E6D442A.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — Even More Coffee">
-                    <div class="visual-slide-media"><img src="72C97FAE-42D6-44C2-B170-4AA46E6D442A.jpeg" alt="Coffee carousel slide featuring a Seven Fortunes bag and iced salted caramel inset" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 07 · Everyday favourite</span><h3>Even More Coffee</h3><p>A playful continuation rather than a repeated idea, using the branded takeaway bag and inset cup to make the coffee theme feel knowingly personal.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 8 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="7F838DA6-DEEC-4D85-A00D-58552E5EBC02.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — Visiting a Makeup Store">
-                    <div class="visual-slide-media"><img src="7F838DA6-DEEC-4D85-A00D-58552E5EBC02.jpeg" alt="Beauty carousel slide showing a makeup counter with a personal makeup collection inset" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 08 · Beauty</span><h3>Visiting a Makeup Store</h3><p>A beauty-focused slide connecting the excitement of browsing a premium makeup counter with the products that become part of a personal collection.</p></div>
-                </article>
-                <article class="visual-slide" aria-label="Slide 9 of 9">
-                  <button class="visual-media-button" type="button" data-lightbox-src="21307FC5-12EA-47DD-9C31-3B412D9F9950.jpeg" data-lightbox-caption="Little Things That Bring Me Joy — Going to a Bookstore">
-                    <div class="visual-slide-media"><img src="21307FC5-12EA-47DD-9C31-3B412D9F9950.jpeg" alt="Bookstore carousel slide with shelves of books and an Atomic Habits inset" loading="lazy"><span class="visual-open-hint">Click to expand ↗</span></div>
-                  </button>
-                  <div class="visual-carousel-copy"><span class="visual-eyebrow">Slide 09 · Books</span><h3>Going to a Bookstore</h3><p>A cosy closing slide that combines the atmosphere of browsing shelves with a specific reading detail, ending the series on a thoughtful note.</p></div>
-                </article>
-              </div>
-            </div>
-            <div class="visual-controls">
-              <button class="visual-arrow visual-prev" type="button" aria-label="Previous slide">←</button>
-              <div class="visual-dots" role="group" aria-label="Choose a slide"></div>
-              <button class="visual-arrow visual-next" type="button" aria-label="Next slide">→</button>
-            </div>
-            <div class="visual-counter" aria-live="polite">01 / 09</div>
-          </div>
-        </div>
-      </div>
-      <div class="visual-note"><strong>Designed and assembled by me in Canva.</strong><span>thumbnail design · social carousels · visual storytelling · art direction</span></div>
-    </section>
-    <dialog class="visual-lightbox" aria-label="Expanded visual">
-      <img src="" alt="">
-      <div class="visual-lightbox-bar"><span class="visual-lightbox-caption"></span><button class="visual-lightbox-close" type="button" aria-label="Close expanded image">×</button></div>
-    </dialog>
     <section class="full-section web-section" id="websites" aria-labelledby="web-title"><header class="section-head"><h2 id="web-title">Web and digital work</h2><p>A website is another way to tell a story. I use structure, writing and visual direction to decide what someone should see, understand and do next.</p></header>
       <div class="digital-intro"><span>PERSONAL PORTFOLIO · 2026</span><strong>A place for all the work that did not fit into one category.</strong><p>I created this portfolio to bring my marketing work, writing, content and personal projects together in a way that feels connected and easy to explore.</p></div>
       <div class="digital-projects">
@@ -992,18 +807,6 @@
     menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
     const ugcVideos=[...document.querySelectorAll('.ugc-video-frame video')];
     ugcVideos.forEach(video=>video.addEventListener('play',()=>ugcVideos.forEach(other=>{if(other!==video&&!other.paused)other.pause()})));
-    document.querySelectorAll('.visual-carousel').forEach(carousel=>{
-      const visualTrack=carousel.querySelector('.visual-track'),visualSlides=[...carousel.querySelectorAll('.visual-slide')],visualDots=carousel.querySelector('.visual-dots'),visualCounter=carousel.querySelector('.visual-counter');
-      let visualIndex=0,visualTouchStart=0;
-      visualSlides.forEach((slide,index)=>{const dot=document.createElement('button');dot.type='button';dot.className='visual-dot';dot.setAttribute('aria-label',`Go to slide ${index+1}`);dot.addEventListener('click',()=>showVisualSlide(index));visualDots.append(dot)});
-      const visualDotButtons=[...visualDots.children];
-      function showVisualSlide(index){visualIndex=(index+visualSlides.length)%visualSlides.length;visualTrack.style.transform=`translateX(-${visualIndex*100}%)`;visualSlides.forEach((slide,i)=>slide.setAttribute('aria-hidden',String(i!==visualIndex)));visualDotButtons.forEach((dot,i)=>dot.setAttribute('aria-current',String(i===visualIndex)));visualCounter.textContent=`${String(visualIndex+1).padStart(2,'0')} / ${String(visualSlides.length).padStart(2,'0')}`}
-      carousel.querySelector('.visual-prev').addEventListener('click',()=>showVisualSlide(visualIndex-1));carousel.querySelector('.visual-next').addEventListener('click',()=>showVisualSlide(visualIndex+1));
-      visualTrack.addEventListener('touchstart',event=>{visualTouchStart=event.changedTouches[0].clientX},{passive:true});visualTrack.addEventListener('touchend',event=>{const distance=event.changedTouches[0].clientX-visualTouchStart;if(Math.abs(distance)>45)showVisualSlide(visualIndex+(distance<0?1:-1))},{passive:true});showVisualSlide(0);
-    });
-    const visualLightbox=document.querySelector('.visual-lightbox'),visualLightboxImage=visualLightbox.querySelector('img'),visualLightboxCaption=visualLightbox.querySelector('.visual-lightbox-caption');
-    document.querySelectorAll('[data-lightbox-src]').forEach(button=>button.addEventListener('click',()=>{visualLightboxImage.src=button.dataset.lightboxSrc;visualLightboxImage.alt=button.querySelector('img').alt;visualLightboxCaption.textContent=button.dataset.lightboxCaption;visualLightbox.showModal()}));
-    visualLightbox.querySelector('.visual-lightbox-close').addEventListener('click',()=>visualLightbox.close());visualLightbox.addEventListener('click',event=>{if(event.target===visualLightbox)visualLightbox.close()});
     const inquiry=document.querySelector('#inquiry-form'),formNote=document.querySelector('#form-note');
     inquiry.addEventListener('submit',async event=>{
       event.preventDefault();
@@ -1026,7 +829,7 @@
     const intro=document.querySelector('.intro-overlay');
     if(intro&&!document.documentElement.classList.contains('intro-seen'))intro.addEventListener('animationend',event=>{if(event.animationName==='introLeave'){try{sessionStorage.setItem('sae-intro-seen','1')}catch(e){}}});
     const sections=[...document.querySelectorAll('.about-section,.stats-section,.content-section,.identity-section,.partners-section,.full-section,.site-footer')];
-    const itemSelector='.profile-file,.pink-note,.stat-card,.phone-stat,.atelier-feature,.content-entry,.atelier-note,.brand-index,.brand-stage,.project-row,.archive-note,.ugc-video-card,.ugc-real-note,.visual-feature,.visual-carousel-wrap,.visual-note,.digital-intro,.digital-project,.digital-footer,.episode,.open-page,.publication,.writing-index,.work-menu-intro,.work-path,.scope-builder,.route-card,.route-note,.inbox-intro,.question-message,.contact-arrival,.contact-fit,.inquiry-desk,.after-contact>div,.contact-closing,.inquiry>*';
+    const itemSelector='.profile-file,.pink-note,.stat-card,.phone-stat,.atelier-feature,.content-entry,.atelier-note,.brand-index,.brand-stage,.project-row,.archive-note,.ugc-video-card,.ugc-real-note,.digital-intro,.digital-project,.digital-footer,.episode,.open-page,.publication,.writing-index,.work-menu-intro,.work-path,.scope-builder,.route-card,.route-note,.inbox-intro,.question-message,.contact-arrival,.contact-fit,.inquiry-desk,.after-contact>div,.contact-closing,.inquiry>*';
     sections.forEach(section=>{section.classList.add('reveal-section');section.querySelectorAll('h2,.section-head>p,.lens-copy>p').forEach(item=>item.classList.add('reveal-title'));section.querySelectorAll(itemSelector).forEach((item,index)=>{item.classList.add('reveal-item');item.style.setProperty('--reveal-delay',`${Math.min(index,7)*70}ms`)})});
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}),{threshold:.08,rootMargin:'0px 0px -8%'});
     sections.forEach(section=>observer.observe(section));
